@@ -25,7 +25,7 @@ if (env === 'development' || env === 'test' ) {
 
   require('@google-cloud/debug-agent').start({allowExpressions: true});
   // run in cloud console root gcloud debug source gen-repo-info-file
-  process.env.GOOGLE_APPLICATION_CREDENTIALS = "config/StdTest2-6647419c2653.json";
+  process.env.GOOGLE_APPLICATION_CREDENTIALS = "./StdTest2-6647419c2653.json";
   var envConfig = config["qat"];
   Object.keys(envConfig).forEach((key) => {
     process.env[key] = envConfig[key];
