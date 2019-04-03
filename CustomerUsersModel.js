@@ -2,7 +2,7 @@
 // Node js data model models/CustomerUsersModel.js';
 const kind = 'CustomerUsers';
 const namespace = 'propmanage';
-const Datastore = require('@google-cloud/datastore');
+const {Datastore} = require('@google-cloud/datastore');
 
 
 var projectId = process.env.PROJECT;
@@ -14,8 +14,7 @@ if( process.env.GOOGLE_CLOUD_PROJECT ){
 console.log('CustomerUsers: projectId', projectId);
 const datastore = new Datastore({
     projectId: projectId,
-    namespace: namespace,
-    keyFilename: 'StdTest2-6647419c2653.json'
+    namespace: namespace
 });
 exports.createEntity = async function(dataIn, callback){
     console.log('Create', kind, namespace);
