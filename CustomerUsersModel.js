@@ -14,7 +14,8 @@ if( process.env.GOOGLE_CLOUD_PROJECT ){
 console.log('CustomerUsers: projectId', projectId);
 const datastore = new Datastore({
     projectId: projectId,
-    namespace: namespace
+    namespace: namespace,
+    keyFilename: './StdTest2-6647419c2653.json'
 });
 exports.createEntity = async function(dataIn, callback){
     console.log('Create', kind, namespace);
