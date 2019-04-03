@@ -1,0 +1,20 @@
+{
+    "test": {
+      "PORT": 3000,
+      "PROJECT":"stdtest2-217119",
+      "SERVICE_URL":"http://localhost:3000",
+      "STORAGE_BUCKET": "gs://stdtest2-217119.appspot.com"
+    },
+    "development": {
+      "PORT": 3000,
+      "PROJECT":"stdtest2-217119",
+      "SERVICE_URL":"http://localhost:3000",
+      "STORAGE_BUCKET": "gs://stdtest2-217119.appspot.com"
+    },
+    "qat": {
+      "PROJECT":"stdtest2-217119",
+      "SERVICE_URL":"https://pm-dot-stdtest2-217119.appspot.com/",
+      "STORAGE_BUCKET": "gs://stdtest2-217119.appspot.com"
+    }
+  }
+  
